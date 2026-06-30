@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JSX App</title>
+    <!-- 1. Load React and React-DOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- 2. Load Babel (This compiles your JSX in the browser) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <!-- 3. Tell Babel to read this script block as JSX -->
+    <script type="text/babel">
+        // PASTE ALL OF YOUR JSX CODE DIRECTLY BELOW THIS LINE:
+        
+        function MyComponent() {
+            return <h1>Hello from my JSX file!</h1>;
+        }
+
+        // This line mounts your component onto the webpage
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<MyComponent />);
+    </script>
+
+</body>
+</html>
